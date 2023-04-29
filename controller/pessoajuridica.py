@@ -1,4 +1,4 @@
-from model.pessoajur import PessoaJuridica
+from model.pessoajur import pessoaJuridica
 
 def create_psj(carro):
     carros = open('pessoaJuridica.txt', 'a')
@@ -14,13 +14,13 @@ def read_psj():
 
         print(carro_objeto)
 
-        PessoaJuridica = PessoaJuridica()
+        pessoajuridica = pessoaJuridica()
 
-        PessoaJuridica.marca = carro_objeto[0]
-        PessoaJuridica.modelo = carro_objeto[1]
-        PessoaJuridica.placa = carro_objeto[2]
-        PessoaJuridica.cor = carro_objeto[3]
-        PessoaJuridica.ano = carro_objeto[4]
+        pessoajuridica.marca = carro_objeto[0]
+        pessoajuridica.modelo = carro_objeto[1]
+        pessoajuridica.placa = carro_objeto[2]
+        pessoajuridica.cor = carro_objeto[3]
+        pessoajuridica.ano = carro_objeto[4]
 
         lista_carros.append(carro)
     carros.close

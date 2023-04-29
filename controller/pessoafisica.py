@@ -1,4 +1,4 @@
-from model.pessoafis import PessoaFisica
+from model.pessoafis import pessoaFisica
 
 def create_psf(carro):
     carros = open('pessoaFisica.txt', 'a')
@@ -14,13 +14,13 @@ def read_psf():
 
         print(carro_objeto)
 
-        PessoaFisica = PessoaFisica()
+        pessoaFisica = pessoaFisica()
 
-        PessoaFisica.marca = carro_objeto[0]
-        PessoaFisica.modelo = carro_objeto[1]
-        PessoaFisica.placa = carro_objeto[2]
-        PessoaFisica.cor = carro_objeto[3]
-        PessoaFisica.ano = carro_objeto[4]
+        pessoaFisica.marca = carro_objeto[0]
+        pessoaFisica.modelo = carro_objeto[1]
+        pessoaFisica.placa = carro_objeto[2]
+        pessoaFisica.cor = carro_objeto[3]
+        pessoaFisica.ano = carro_objeto[4]
 
         lista_carros.append(carro)
     carros.close
