@@ -1,4 +1,5 @@
 from model.pessoajur import PessoaJuridica
+
 def create_psj(carro):
     carros = open('pessoaJuridica.txt', 'a')
     carros.write(str(carro)+'\n')
@@ -7,30 +8,23 @@ def create_psj(carro):
 def read_psj():
     lista_carros = []
     carros = open('pessoaJuridica.txt', 'r')
-
     for carro in carros:
-        
         carro = carro.strip()
-        carro__objeto = carro.split(';')
+        carro_objeto = carro.split(';')
 
-        print(carro__objeto)
-        
-        pessoajuridica = PessoaJuridica()
+        print(carro_objeto)
 
-        pessoajuridica.pais = carro__objeto[0]
-        pessoajuridica.estado = carro__objeto[1]
-        
-        pessoajuridica.marca = carro__objeto[2]
-        pessoajuridica.modelo = carro__objeto[3]
-        pessoajuridica.placa = carro__objeto[4]
-        pessoajuridica.cor = carro__objeto[5]
-        pessoajuridica.ano = carro__objeto[6]
+        PessoaJuridica = PessoaJuridica()
 
-        lista_carros.append(pessoajuridica)
-        
+        PessoaJuridica.marca = carro_objeto[0]
+        PessoaJuridica.modelo = carro_objeto[1]
+        PessoaJuridica.placa = carro_objeto[2]
+        PessoaJuridica.cor = carro_objeto[3]
+        PessoaJuridica.ano = carro_objeto[4]
+
+        lista_carros.append(carro)
     carros.close
     return lista_carros
-
 
 
 

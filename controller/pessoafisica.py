@@ -1,35 +1,27 @@
 from model.pessoafis import PessoaFisica
 
-def create_psj(carro):
-    carros = open('pessoaJuridica.txt', 'a')
+def create_psf(carro):
+    carros = open('pessoaFisica.txt', 'a')
     carros.write(str(carro)+'\n')
     carros.close
 
-def read_psj():
+def read_psf():
     lista_carros = []
-    carros = open('pessoaJuridica.txt', 'r')
-
+    carros = open('pessoaFisica.txt', 'r')
     for carro in carros:
-        
         carro = carro.strip()
-        carro__objeto = carro.split(';')
+        carro_objeto = carro.split(';')
 
-        print(carro__objeto)
-        
-        pessoajuridica = PessoaFisica()
+        print(carro_objeto)
 
-        pessoajuridica.pais = carro__objeto[0]
-        pessoajuridica.estado = carro__objeto[1]
-        
-        pessoajuridica.marca = carro__objeto[2]
-        pessoajuridica.modelo = carro__objeto[3]
-        pessoajuridica.placa = carro__objeto[4]
-        pessoajuridica.cor = carro__objeto[5]
-        pessoajuridica.ano = carro__objeto[6]
+        PessoaFisica = PessoaFisica()
 
-        lista_carros.append(pessoajuridica)
-        
+        PessoaFisica.marca = carro_objeto[0]
+        PessoaFisica.modelo = carro_objeto[1]
+        PessoaFisica.placa = carro_objeto[2]
+        PessoaFisica.cor = carro_objeto[3]
+        PessoaFisica.ano = carro_objeto[4]
+
+        lista_carros.append(carro)
     carros.close
     return lista_carros
-
-
