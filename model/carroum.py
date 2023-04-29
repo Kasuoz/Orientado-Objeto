@@ -1,6 +1,6 @@
 from model.carro import Carro
 
-class PessoaFisica(Carro):
+class carroum(Carro):
     __marca = ""
     __modelo = ""
     __placa = ""

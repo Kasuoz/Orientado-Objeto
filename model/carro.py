@@ -12,7 +12,7 @@ class Carro:
     @property
     def estado(self):
         return self.__estado
-    @pais.setter
+    @estado.setter
     def estado(self, estado):
         self.__estado = estado    
 
