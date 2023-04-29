@@ -1,6 +1,10 @@
 from model.carro import Carro
 
+<<<<<<< HEAD:model/carrodois.py
 class carrodois(Carro):
+=======
+class pessoaFisica(Carro):
+>>>>>>> 3075a411379ae433745f13aff223818975cbf28d:model/pessoafis.py
     __marca = ""
     __modelo = ""
     __placa = ""

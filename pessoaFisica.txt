@@ -1,0 +1,6 @@
+<class 'model.pessoafis.pessoaFisica'>
+<class 'model.pessoafis.pessoaFisica'>
+<class 'model.pessoafis.pessoaFisica'>
+<class 'model.pessoafis.pessoaFisica'>
+<class 'model.pessoafis.pessoaFisica'>
+<class 'model.pessoafis.pessoaFisica'>
